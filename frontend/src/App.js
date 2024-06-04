@@ -86,9 +86,9 @@ function App() {
     <Route path="/orders" element={<ProtectedRoute element={MyOrders} />} />
     <Route path="/shipping" element={<ProtectedRoute element={Shipping} />} />
     <Route path="/order/confirm" element={<ProtectedRoute element={ConfirmOrder} />} />
-    <Route path="/admin/dashboard" element={<ProtectedRoute isAdmin={true} element={Dashboard} />} />
-    <Route path="/admin/products" element={<ProtectedRoute isAdmin={true} element={ProductList} />} />
-    <Route path="/admin/product" element={<ProtectedRoute isAdmin={true} element={NewProduct} />} />
+    <Route path="/admin/dashboard" element={<ProtectedRoute  element={Dashboard} />} />
+    <Route path="/admin/products" element={<ProtectedRoute  element={ProductList} />} />
+    <Route path="/admin/product" element={<ProtectedRoute  element={NewProduct} />} />
     <Route path="/success" element={<ProtectedRoute element={OrderSuccess} />} />
     <Route path="/order/:id" element={<ProtectedRoute element={OrderDetails} />} />
     <Route path="*" element={<NotFound />} />
