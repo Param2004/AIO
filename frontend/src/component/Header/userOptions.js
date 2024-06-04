@@ -63,9 +63,7 @@ const UserOptions = () => {
     alert.success("Logout Successfully");
   }
 
-  return (<Fragment>
-     {loading ? (
-      <Loader /> ):(
+  return (
         <Fragment>
       <Backdrop open={open} style={{ zIndex: "10" }} />
       <SpeedDial
@@ -94,7 +92,6 @@ const UserOptions = () => {
           />
         ))}
       </SpeedDial>
-    </Fragment>)}
     </Fragment>
   );
 };
