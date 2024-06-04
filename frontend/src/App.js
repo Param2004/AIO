@@ -63,7 +63,7 @@ function App() {
   
     getStripeApiKey();
   }, []);
-  window.addEventListener("contextmenu", (e) => e.preventDefault());
+  
   return  <BrowserRouter>
     <Header />
     {isAuthenticated && <UserOptions user={user} />}
