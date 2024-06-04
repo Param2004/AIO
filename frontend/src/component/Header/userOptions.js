@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
 import Profile from "../User/Profile.png"
 import {logout} from "../../actions/userAction"
+import Loader from "../layout/loader/loader";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -62,8 +63,10 @@ const UserOptions = () => {
     alert.success("Logout Successfully");
   }
 
-  return (
-    <Fragment>
+  return (<Fragment>
+     {loading ? (
+      <Loader /> ):(
+        <Fragment>
       <Backdrop open={open} style={{ zIndex: "10" }} />
       <SpeedDial
         ariaLabel="SpeedDial tooltip example"
@@ -91,6 +94,7 @@ const UserOptions = () => {
           />
         ))}
       </SpeedDial>
+    </Fragment>)}
     </Fragment>
   );
 };
