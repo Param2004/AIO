@@ -17,7 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const UserOptions = () => {
 
-  const {user} = useSelector((state) => state.user);
+  const {loading,user} = useSelector((state) => state.user);
   const { cartItems } = useSelector((state) => state.cart);
   
   const [open, setOpen] = useState(false);
