@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const errorMiddleware = require("./middleware/error");
-import cors from "cors"
+const cors = require("cors");
 const cookieParser = require('cookie-parser')
 
 const bodyParser = require("body-parser");
