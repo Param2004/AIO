@@ -18,6 +18,7 @@
     "chart.js": "^4.4.2",
     "chartjs": "^0.3.24",
     "cloudinary": "^1.32.0",
+    "cors": "^2.8.5",
     "country-state-city": "^3.2.1",
     "express-fileupload": "^1.4.1",
     "heroicons-react": "^1.4.1",
@@ -46,7 +47,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
-  },  
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

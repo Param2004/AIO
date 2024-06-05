@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const errorMiddleware = require("./middleware/error");
+import cors from "cors"
 const cookieParser = require('cookie-parser')
 
 const bodyParser = require("body-parser");
@@ -10,6 +11,10 @@ const dotenv = require("dotenv");
 dotenv.config({
     path:"backend/config/config.env"
 })
+app.use(cors({
+    origin: process.env.CORS_ORIGIN,
+    credentials: true
+}))
 
 
 app.use(express.json());
