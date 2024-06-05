@@ -66,7 +66,7 @@ function App() {
   
   return  <BrowserRouter>
     <Header />
-    {isAuthenticated && <UserOptions user={user} />}
+    {isAuthenticated &&user&& <UserOptions user={user} />}
     <Routes>
     
     <Route path="/" element={<Home />} />
